@@ -1,0 +1,15 @@
+{
+  "name": "my-electron-app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build-mac":"electron-packager ./ SimpleMarkDown --out ./OutApp --overwrite --icon=logo.icns", 
+    "build-all":"electron-packager ./ SimpleMarkDown --all --out ./OutAllApp  --overwrite --icon=favicon.ico"
+  },
+  "devDependencies": {
+    "electron": "^10.1.5",
+    "electron-packager": "^15.1.0"
+  }
+}
